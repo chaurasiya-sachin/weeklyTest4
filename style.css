@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #d0cdcd;
+     
+
+}
+
+.nav-container{
+    width: 100%;
+    height: 10vh;    /*height % not work */
+    background-color: rgb(57, 54, 54);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: green; */
+    /* position: fixed; */
+    position:sticky;
+    top: 0;
+    z-index: 1000px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+    padding-left: 10rem;
+}
+
+
+
+
+
+.logo-container a{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.logo-container a:hover{
+    color: rgb(239, 239, 239);
+}
+
+
+.all-links{
+    /* box-sizing: border-box; */
+    width: 50%;
+    height: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+
+
+}
+
+.all-links li{
+    /* box-sizing: border-box; */
+    list-style: none;
+    color: white;
+    font-size: 1.5 rem;
+    font-weight: 600;
+    padding-left: 2.5rem;
+}
+
+.all-links li:hover{
+    color: rgb(239, 239, 239);
+    cursor: pointer;
+}
+
+
+.home-section{
+    height: 90vh;    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-image: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped") ;    
+    background-position: center 65%;
+    background-size: cover;
+    background-attachment:fixed;
+    
+   
+    
+}
+
+.home-content{
+    width: 65%;
+    height: 85%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+    /* position: relative; */
+    /* background-color: black; */
+}
+
+.home-content h2{
+    font-size: 3.8rem;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.home-content p{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80%;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.home-content a{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #000;
+    background-color: white;
+    box-shadow:0px 2px 15px rgb(138, 138, 138);
+}
+
+.home-content a:hover{
+    color: #fff;
+    background-color: rgba(185, 181, 181, 0.236);
+}
+
+ .service-section{
+    width: 100%;
+    height: 90vh;
+    /* background-color: black; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;*/
+ }
+
+ .service-content{    
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+ }
+
+ .service-text{
+    height: 20%;
+    margin-top: 3.5rem;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+ }
+
+ .service-text h2{
+    font-size: 2rem;
+    font-weight: 700;
+ }
+
+ .card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    /* align-items: baseline; */
+    /* flex-wrap: wrap; */
+
+ }
+
+ .caard{
+    height: 320px;
+    width: 320px;
+    margin: 0.5rem 0rem;
+    background-color: wheat;
+    border-radius: 5px;
+    overflow: hidden;
+ }
